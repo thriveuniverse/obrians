@@ -17,7 +17,7 @@ export default function About() {
             <Navbar />
 
             <Hero
-                title="Meet the Team"
+                title={t('about.title')}
                 video="/join-us.mp4"
             />
 
@@ -32,10 +32,10 @@ export default function About() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 !text-primary" style={{ color: 'var(--primary)' }}>
-                            The Faces Behind the Bar
+                            {t('about.subtitle')}
                         </h2>
                         <p className="text-xl text-gray-600 italic leading-relaxed">
-                            "There are no strangers here; Only friends you haven't yet met."
+                            {t('about.quote')}
                         </p>
                     </motion.div>
 
@@ -76,10 +76,10 @@ export default function About() {
 
                                 <div className="p-6 text-center flex-1 flex flex-col justify-center">
                                     <h3 className="text-2xl font-serif font-bold text-primary mb-2">
-                                        Team Member {member}
+                                        {t('about.memberLabel')} {member}
                                     </h3>
                                     <p className="text-gray-700 italic">
-                                        Role / Fun Fact / Quote goes here...
+                                        {t('about.memberDesc')}
                                     </p>
                                 </div>
                             </motion.div>

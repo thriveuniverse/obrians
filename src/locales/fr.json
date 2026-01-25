@@ -70,27 +70,11 @@
         "quote": "Une photo, c'est une histoire figée pour toujours."
     },
     "about": {
-        "heroSubtitle": "Le plan de survie apocalyptique qui a sacrément bon goût",
-        "mainTitle": "Bières Artisanales : Le Plan de Survie Apocalyptique (Qui a Vraiment Bon Goût)",
-        "mainQuote": "Quand l'apocalypse arrive, on pourra en débattre autour d'une bière. Oublier les problèmes un moment. Planifier le nouveau monde. Ou juste rigoler de l'absurdité de tout ça. Dans tous les cas, on aura de quoi trinquer.",
-        "intro": "Parce que les bières artisanales sont faites pour prospérer, pas seulement survivre.",
-        "section1": {
-            "title": "Pas de cochonneries chimiques – que du vrai, qui vient de la terre",
-            "content": "Les bières industrielles sont bourrées de stabilisants, conservateurs et additifs mystère pour tenir des mois en rayon. Les artisanales ? Eau, malt, houblon, levure (et parfois des twists locaux). Tu goûtes ce que la nature et un brasseur honnête ont voulu. Pas de saletés que tu refuserais dans ton corps quand le monde part en vrille (ou même un mardi normal). Vie propre dans un verre."
-        },
-        "section2": {
-            "title": "Les fruits de la terre, façonnés par de vraies gens",
-            "content": "Brasser artisanal, c'est célébrer ce que la terre et l'intelligence humaine peuvent faire ensemble. Houblons puissants, malts riches, expériences saisonnières — que ce soit des micro-brasseries de l'Aude ou des maîtres belges et internationaux. La qualité n'a pas besoin d'usine géante ; elle vit dans les petites cuvées, les mains habiles et l'imagination. Post-apo ou avant, c'est la vie qu'on veut : savoureuse, naturelle et pleine de caractère."
-        },
-        "section3": {
-            "title": "Saucisson, pain et bonne compagnie – le vrai kit de survie",
-            "content": "Accompagne ta bière d'une planche de saucisson, pain frais, peut-être quelques fromages ou charcuteries locales. Simple, consistant, éternel. Dans nos caves voûtées, tu ne bois pas juste — tu te réunis avec une tribu qui comprend : bonne bière, bonne bouffe, bonnes histoires. Peu importe ce que le monde extérieur balance, on s'adapte, on savoure et on garde le robinet ouvert."
-        },
-        "ctaTitle": "Rejoins la Tribu des Voûtes : Survis, Prospère et Profite du Voyage",
-        "ctaText": "On n'est pas des survivalistes fous. On est juste des gens qui préfèrent le vrai au transformé, le goût au remplissage et la communauté à la facilité. Quand ça devient dur (ou reste bénin), tu nous trouveras ici — à servir des bières honnêtes dans de la pierre du XIIIe, à partager des planches, à échanger des histoires et à trinquer à ce qui vient.",
-        "ctaSubtext": "Viens pour la bière qui survivra peut-être à l'apocalypse. Reste pour la vibe qui rend chaque jour victorieux.",
-        "ctaButton1": "Prêt à rejoindre ?",
-        "ctaButton2": "Nous suivre sur Instagram"
+        "title": "Rencontrez l'Équipe",
+        "subtitle": "Les Visages Derrière le Bar",
+        "quote": "\"Il n'y a pas d'étrangers ici ; seulement des amis que vous n'avez pas encore rencontrés.\"",
+        "memberLabel": "Membre de l'Équipe",
+        "memberDesc": "Rôle / Anecdote / Citation ici..."
     },
     "sports": {
         "title": "Sports en Direct & Ambiance",

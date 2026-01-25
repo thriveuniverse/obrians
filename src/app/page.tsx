@@ -40,7 +40,7 @@ export default function Home() {
       <Hero
         title="O'Brians Pub"
         ctaText={t('home.cta')}
-        ctaLink="/about"
+        ctaLink="/drinks"
         textColor="text-accent"
         image="https://images.unsplash.com/photo-1541546339599-ecdbf3773bc5?auto=format&fit=crop&q=80"
         video="/obrians-pub.mp4"

@@ -70,27 +70,11 @@
         "quote": "A picture is a story that has been captured forever."
     },
     "about": {
-        "heroSubtitle": "The apocalyptic survival plan that tastes damn good",
-        "mainTitle": "Artisanal Beers: The Apocalyptic Survival Plan (That Tastes Damn Good)",
-        "mainQuote": "When the apocalypse happens, we can debate it over a glass of beer. Forget our problems for a while. Plan the new world. Or just laugh at how ridiculous it all got. Either way, we'll have something worth raising a glass to.",
-        "intro": "Because here's the thing: artisanal beers are built for thriving, not just surviving.",
-        "section1": {
-            "title": "No Unwanted Chemicals – Just Pure, Earth-Grown Goodness",
-            "content": "Mass-market brews often come loaded with stabilizers, preservatives, and mystery additives to survive endless shipping and shelf life. Craft beers? Mostly water, malt, hops, yeast (and maybe some fun local twists). What you get is honest flavor from real ingredients—no junk you wouldn't want in your body when the world goes sideways (or even on a normal Tuesday). Clean living in a pint."
-        },
-        "section2": {
-            "title": "The Fruits of the Earth, Crafted by Real People",
-            "content": "Artisanal brewing celebrates what the land and human ingenuity can do together. Bold hops, rich malts, seasonal experiments—whether from nearby Aude microbrasseries or masterful Belgian or international artisans. It's a reminder that quality doesn't need a global factory; it thrives in small batches, skilled hands, and imagination. Post-crisis or pre-, that's the life we want: flavorful, natural, and full of character."
-        },
-        "section3": {
-            "title": "Saucisson, Bread, and Good Company – The Real Survival Kit",
-            "content": "Pair that beer with a platter of saucisson, fresh bread, maybe some local cheeses or charcuterie. Simple, hearty, timeless. In our vaulted cellars, you're not just drinking—you're gathering with a loose tribe of people who get it: good beer, good food, good stories. No matter what the outside world throws at us, we adapt, enjoy, and keep the fire (or the tap) going."
-        },
-        "ctaTitle": "Join the Vault Tribe: Survive, Thrive, and Enjoy the Ride",
-        "ctaText": "We're not doomsday preppers. We're just folks who prefer real over processed, flavor over filler, and community over convenience. When things get tough (or stay blissfully normal), you'll find us here—pouring honest brews in 13th-century stone, sharing platters, swapping tales, and toasting to whatever comes next.",
-        "ctaSubtext": "Come for the beer that might outlast the apocalypse. Stay for the vibe that makes every day feel like a win.",
-        "ctaButton1": "Ready to Join?",
-        "ctaButton2": "Follow us on Instagram"
+        "title": "Meet the Team",
+        "subtitle": "The Faces Behind the Bar",
+        "quote": "\"There are no strangers here; Only friends you haven't yet met.\"",
+        "memberLabel": "Team Member",
+        "memberDesc": "Role / Fun Fact / Quote goes here..."
     },
     "sports": {
         "title": "Live Sports & Atmosphere",
