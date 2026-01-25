@@ -1,0 +1,119 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "history": "Sports en Direct",
+        "gallery": "Découvre la Vibe",
+        "drinks": "Carte des Boissons"
+    },
+    "drinks": {
+        "title": "Nos Boissons",
+        "game": {
+            "title": "Roulette des Cocktails",
+            "subtitle": "Indécis ? Laissez le destin choisir votre poison.",
+            "label": "Je me sens...",
+            "button": "Le Destin Attend",
+            "result": "Vous devriez goûter :",
+            "options": {
+                "Sweet": "Sucré",
+                "Spicy": "Épicé",
+                "Refreshing": "Rafraîchissant",
+                "Strong": "Fort",
+                "Shot": "Shot",
+                "Long Drink": "Long Drink",
+                "Surprise Me (Any)": "Surprends-moi (Tout)"
+            }
+        },
+        "cocktails": {
+            "title": "Cocktails Signature"
+        },
+        "beerWine": {
+            "beerTitle": "Pressions & Bouteilles",
+            "wineTitle": "Sélection de Vins"
+        }
+    },
+    "home": {
+        "welcome": "Bienvenue dans L'Antre",
+        "subtitle": "Venez déguster une bonne bière dans un décor typiquement Irlandais.",
+        "instaTitle": "Derniers instants sur Instagram",
+        "cta": "Plonge Dedans",
+        "discoverMore": "Découvre plus",
+        "introTitle": "Bienvenue chez O'Brians : l'Irish Pub chic et relax de Narbonne",
+        "introText": "Bières du monde, cocktails qui claquent, sports en direct sur grand écran et une ambiance conviviale qui dure jusqu'au bout de la nuit.",
+        "cards": {
+            "about": {
+                "title": "Bières Artisanales",
+                "desc": "Pourquoi on choisit l'authentique (même en cas d'apocalypse)."
+            },
+            "history": {
+                "title": "Échos des Voûtes",
+                "desc": "Des secrets médiévaux aux tunnels oubliés."
+            },
+            "gallery": {
+                "title": "La Vibe en Images",
+                "desc": "Vaults, verres levés et moments capturés."
+            }
+        },
+        "galleryTeaser": {
+            "title": "Capture la Vibe",
+            "text": "Une ambiance conviviale qui dure jusqu'au bout de la nuit",
+            "cta": "Voir la Galerie"
+        },
+        "instaText": "Restez connecté à la vie du pub.",
+        "instaFollow": "Suivre O'Brians Pub",
+        "instaFacebook": "Voir notre Facebook"
+    },
+    "gallery": {
+        "subtitle": "Instantanés des voûtes et de la tribu.",
+        "collection": "La Collection",
+        "title": "Découvre la Vibe",
+        "quote": "Une photo, c'est une histoire figée pour toujours."
+    },
+    "about": {
+        "heroSubtitle": "Le plan de survie apocalyptique qui a sacrément bon goût",
+        "mainTitle": "Bières Artisanales : Le Plan de Survie Apocalyptique (Qui a Vraiment Bon Goût)",
+        "mainQuote": "Quand l'apocalypse arrive, on pourra en débattre autour d'une bière. Oublier les problèmes un moment. Planifier le nouveau monde. Ou juste rigoler de l'absurdité de tout ça. Dans tous les cas, on aura de quoi trinquer.",
+        "intro": "Parce que les bières artisanales sont faites pour prospérer, pas seulement survivre.",
+        "section1": {
+            "title": "Pas de cochonneries chimiques – que du vrai, qui vient de la terre",
+            "content": "Les bières industrielles sont bourrées de stabilisants, conservateurs et additifs mystère pour tenir des mois en rayon. Les artisanales ? Eau, malt, houblon, levure (et parfois des twists locaux). Tu goûtes ce que la nature et un brasseur honnête ont voulu. Pas de saletés que tu refuserais dans ton corps quand le monde part en vrille (ou même un mardi normal). Vie propre dans un verre."
+        },
+        "section2": {
+            "title": "Les fruits de la terre, façonnés par de vraies gens",
+            "content": "Brasser artisanal, c'est célébrer ce que la terre et l'intelligence humaine peuvent faire ensemble. Houblons puissants, malts riches, expériences saisonnières — que ce soit des micro-brasseries de l'Aude ou des maîtres belges et internationaux. La qualité n'a pas besoin d'usine géante ; elle vit dans les petites cuvées, les mains habiles et l'imagination. Post-apo ou avant, c'est la vie qu'on veut : savoureuse, naturelle et pleine de caractère."
+        },
+        "section3": {
+            "title": "Saucisson, pain et bonne compagnie – le vrai kit de survie",
+            "content": "Accompagne ta bière d'une planche de saucisson, pain frais, peut-être quelques fromages ou charcuteries locales. Simple, consistant, éternel. Dans nos caves voûtées, tu ne bois pas juste — tu te réunis avec une tribu qui comprend : bonne bière, bonne bouffe, bonnes histoires. Peu importe ce que le monde extérieur balance, on s'adapte, on savoure et on garde le robinet ouvert."
+        },
+        "ctaTitle": "Rejoins la Tribu des Voûtes : Survis, Prospère et Profite du Voyage",
+        "ctaText": "On n'est pas des survivalistes fous. On est juste des gens qui préfèrent le vrai au transformé, le goût au remplissage et la communauté à la facilité. Quand ça devient dur (ou reste bénin), tu nous trouveras ici — à servir des bières honnêtes dans de la pierre du XIIIe, à partager des planches, à échanger des histoires et à trinquer à ce qui vient.",
+        "ctaSubtext": "Viens pour la bière qui survivra peut-être à l'apocalypse. Reste pour la vibe qui rend chaque jour victorieux.",
+        "ctaButton1": "Prêt à rejoindre ?",
+        "ctaButton2": "Nous suivre sur Instagram"
+    },
+    "sports": {
+        "title": "Sports en Direct & Ambiance",
+        "intro": "Que votre équipe vienne de marquer un essai à la dernière minute, d'encaisser un but déchirant, ou que vous soyez juste là parce que le match est diffusé et que l'ambiance est bonne — O'Brians est votre endroit. Venez pour le match, restez pour l'ambiance, et repartez avec une pinte de célébration, un cocktail de consolation… ou honnêtement, n'importe quelle boisson qui vous fait envie. On n'est pas difficiles.",
+        "rugby": {
+            "title": "Rugby – Six Nations & Fierté Locale",
+            "text": "Le rugby est ancré ici. Pendant le Tournoi des Six Nations, Écossais, Gallois, Italiens, Irlandais, Français — tout le monde est le bienvenu (même si le chambrage devient animé). Et quand le Racing Narbonne joue ? On est à fond ! Grands écrans, super son, et zéro jugement si vous soutenez l'autre camp."
+        },
+        "football": {
+            "title": "Football",
+            "text": "Fans de foot, on pense à vous aussi. Ligue 1, Premier League, Ligue des Champions, matchs amicaux internationaux — si ça vaut le coup d'être regardé, on le diffuse. En haut du tableau ou en lutte pour le maintien, on sera là pour chaque haut et bas. Amenez vos potes, vos écharpes, vos superstitions — on fournit le volume et les vibes, et bien sûr l'écran et les boissons."
+        },
+        "otherSports": {
+            "text": "Bien sûr, on ne se limite pas aux sports d'équipe. Grands Chelems de tennis, MotoGP, Formule 1, boxe, peu importe ce qui fait parler le monde — s'il y a du monde pour regarder, on fera de la place.",
+            "bookText": "Vous voulez être sûr que votre événement est diffusé ? Envie de réserver une table ou un coin pour votre équipe ? Envoyez-nous un email un jour ou deux avant — on s'occupe des écrans, du son et des meilleures places de la maison."
+        },
+        "cta": {
+            "emailButton": "Envoyez-nous un email pour un match à venir",
+            "instaText": "Suivez-nous sur Instagram @obrians_pub_narbonne pour les mises à jour de dernière minute sur les diffusions"
+        }
+    },
+    "footer": {
+        "rights": "Tous droits réservés.",
+        "address": "4 rue Benjamin Crémieux, 11100 Narbonne, France"
+    }
+}

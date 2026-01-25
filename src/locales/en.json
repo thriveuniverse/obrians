@@ -1,0 +1,119 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "history": "Live Sports",
+        "gallery": "Discover the Vibe",
+        "drinks": "Drinks Menu"
+    },
+    "drinks": {
+        "title": "Our Drinks",
+        "game": {
+            "title": "Cocktail Roulette",
+            "subtitle": "Can't decide? Let fate choose your poison.",
+            "label": "I'm feeling...",
+            "button": "Destiny Awaits",
+            "result": "You should try:",
+            "options": {
+                "Sweet": "Sweet",
+                "Spicy": "Spicy",
+                "Refreshing": "Refreshing",
+                "Strong": "Strong",
+                "Shot": "Shot",
+                "Long Drink": "Long Drink",
+                "Surprise Me (Any)": "Surprise Me (Any)"
+            }
+        },
+        "cocktails": {
+            "title": "Signature Cocktails"
+        },
+        "beerWine": {
+            "beerTitle": "On Tap & Bottles",
+            "wineTitle": "Wine Selection"
+        }
+    },
+    "home": {
+        "welcome": "Welcome to L'Antre",
+        "subtitle": "Come enjoy a good pint in a typically Irish setting.",
+        "instaTitle": "Latest from Instagram",
+        "cta": "Discover More",
+        "discoverMore": "Discover more",
+        "introTitle": "Welcome to O'Brians: Narbonne's Chic & Relaxed Irish Pub",
+        "introText": "World beers, stunning cocktails, live sports on big screens, and a friendly atmosphere that lasts all night long.",
+        "cards": {
+            "about": {
+                "title": "Artisanal Beers",
+                "desc": "Why we choose the authentic (even in apocalypse)."
+            },
+            "history": {
+                "title": "Echoes of the Vaults",
+                "desc": "Medieval secrets to forgotten tunnels."
+            },
+            "gallery": {
+                "title": "The Vibe in Images",
+                "desc": "Vaults, raised glasses and captured moments."
+            }
+        },
+        "galleryTeaser": {
+            "title": "capture the vibe",
+            "text": "A friendly atmosphere that lasts all night long",
+            "cta": "View Gallery"
+        },
+        "instaText": "Stay connected with life at the bar.",
+        "instaFollow": "Follow O'Brians Pub",
+        "instaFacebook": "Visit our Facebook"
+    },
+    "gallery": {
+        "subtitle": "Capturing the colors and character of Narbonne.",
+        "collection": "The Collection",
+        "title": "Discover the Vibe",
+        "quote": "A picture is a story that has been captured forever."
+    },
+    "about": {
+        "heroSubtitle": "The apocalyptic survival plan that tastes damn good",
+        "mainTitle": "Artisanal Beers: The Apocalyptic Survival Plan (That Tastes Damn Good)",
+        "mainQuote": "When the apocalypse happens, we can debate it over a glass of beer. Forget our problems for a while. Plan the new world. Or just laugh at how ridiculous it all got. Either way, we'll have something worth raising a glass to.",
+        "intro": "Because here's the thing: artisanal beers are built for thriving, not just surviving.",
+        "section1": {
+            "title": "No Unwanted Chemicals – Just Pure, Earth-Grown Goodness",
+            "content": "Mass-market brews often come loaded with stabilizers, preservatives, and mystery additives to survive endless shipping and shelf life. Craft beers? Mostly water, malt, hops, yeast (and maybe some fun local twists). What you get is honest flavor from real ingredients—no junk you wouldn't want in your body when the world goes sideways (or even on a normal Tuesday). Clean living in a pint."
+        },
+        "section2": {
+            "title": "The Fruits of the Earth, Crafted by Real People",
+            "content": "Artisanal brewing celebrates what the land and human ingenuity can do together. Bold hops, rich malts, seasonal experiments—whether from nearby Aude microbrasseries or masterful Belgian or international artisans. It's a reminder that quality doesn't need a global factory; it thrives in small batches, skilled hands, and imagination. Post-crisis or pre-, that's the life we want: flavorful, natural, and full of character."
+        },
+        "section3": {
+            "title": "Saucisson, Bread, and Good Company – The Real Survival Kit",
+            "content": "Pair that beer with a platter of saucisson, fresh bread, maybe some local cheeses or charcuterie. Simple, hearty, timeless. In our vaulted cellars, you're not just drinking—you're gathering with a loose tribe of people who get it: good beer, good food, good stories. No matter what the outside world throws at us, we adapt, enjoy, and keep the fire (or the tap) going."
+        },
+        "ctaTitle": "Join the Vault Tribe: Survive, Thrive, and Enjoy the Ride",
+        "ctaText": "We're not doomsday preppers. We're just folks who prefer real over processed, flavor over filler, and community over convenience. When things get tough (or stay blissfully normal), you'll find us here—pouring honest brews in 13th-century stone, sharing platters, swapping tales, and toasting to whatever comes next.",
+        "ctaSubtext": "Come for the beer that might outlast the apocalypse. Stay for the vibe that makes every day feel like a win.",
+        "ctaButton1": "Ready to Join?",
+        "ctaButton2": "Follow us on Instagram"
+    },
+    "sports": {
+        "title": "Live Sports & Atmosphere",
+        "intro": "Whether your team just scored a last-minute try, conceded a heartbreaking goal, or you're just here because the game's on and the craic is good — O'Brians is your spot. Come for the match, stay for the atmosphere, and leave with a celebratory pint, a consolation cocktail… or honestly, just any drink that feels right. We're not fussy.",
+        "rugby": {
+            "title": "Rugby – Six Nations & Local Pride",
+            "text": "Rugby runs deep here. During the Six Nations, Scots, Welsh, Italians, Irish, French — everyone’s welcome (even if the banter gets lively). And when Racing Narbonne is playing? We’re all in! Big screens, great sound, and zero judgment if you’re supporting the ‘other’ side."
+        },
+        "football": {
+            "title": "Football",
+            "text": "Football fans, we’ve got you too. Ligue 1, Premier League, Champions League, international friendlies — if it’s worth watching, we’ll show it. Rising in the table or fighting relegation, we’ll be here for every high and low. Bring your mates, your scarves, your superstitions — we’ll supply the volume and the vibes, and of course the screen and drinks."
+        },
+        "otherSports": {
+            "text": "Of course, we’re not just about team ball games. Tennis Grand Slams, MotoGP, Formula 1, boxing, whatever’s got the world talking — if there’s a crowd that wants to watch, we’ll make space.",
+            "bookText": "Want to make sure your event is on? Fancy reserving a table or a corner for your crew? Drop us an email a day or two before — we’ll sort the screens, the sound, and the best seats in the house."
+        },
+        "cta": {
+            "emailButton": "Email us about an upcoming match",
+            "instaText": "Follow us on Instagram @obrians_pub_narbonne for last-minute updates on what’s showing"
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "address": "4 rue Benjamin Cremieux, 11100 Narbonne, France"
+    }
+}

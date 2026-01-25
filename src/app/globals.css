@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+/* ================================
+   Night Pub / Guinness + Irish Palette
+   ================================ */
+
+:root {
+  /* Core Backgrounds – Deep Night / Guinness Black */
+  --background: #000000;
+  /* Pure black – night bar feel */
+  --background-alt: #0F0F0F;
+  /* Slightly lifted black for cards/sections */
+  --background-deep: #000000;
+  /* Same as main for consistency */
+
+  /* Parchment/Cream surfaces – like Guinness head */
+  --surface: #F5E8C7;
+  /* Soft cream-gold – main content blocks */
+  --surface-muted: #E8D9B5;
+  /* Slightly darker cream */
+  --surface-light: #FFF8E2;
+  /* Very light for hover states */
+
+  /* Text colors – High contrast on black */
+  --foreground: #F5E8C7;
+  /* Cream-gold main text on black – excellent contrast */
+  --text-dark: #1A1A1A;
+  /* Dark for cream backgrounds */
+  --text-muted: #B0A080;
+  /* Muted gold-brown */
+  --text-light: #E8D9B5;
+  /* Lighter cream on very dark */
+
+  /* Brand & accents */
+  --primary: #134215;
+  /* Deep Irish green – main accent */
+  --primary-light: #4CAF50;
+  /* Brighter green for hovers */
+  --primary-dark: #1B5E20;
+  /* Darker green */
+
+  --accent: #E8C89E;
+  /* Warm cream-gold – headlines, icons, buttons */
+  --accent-bright: #F5E8C7;
+  /* Brighter cream for emphasis */
+  --accent-dark: #D4B070;
+  /* Slightly deeper gold for shadows */
+
+  /* Guinness-inspired extras */
+  --guinness-red: #8B0000;
+  /* Optional deep red for special highlights if needed */
+  --guinness-cream: #F5E8C7;
+  /* Alias for foreground/accent */
+}
+
+/* ================================
+   Tailwind Theme Mapping
+   ================================ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-serif: 'Cinzel', ui-serif, Georgia;
+}
+
+/* ================================
+   Base Styles
+   ================================ */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Force blackletter on serif */
+.font-serif {
+  font-family: 'Cinzel', ui-serif, Georgia !important;
+}
+
+/* Headings – illuminated manuscript style with cream-gold */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  /* Subtle glow for pub night feel */
+}
+
+/* Paragraphs on black */
+p {
+  color: var(--foreground);
+}
+
+/* ================================
+   Navigation & Footer – Deep black with subtle glow
+   ================================ */
+
+.nav,
+footer {
+  background: var(--background-deep);
+  color: var(--foreground);
+  border-top: 1px solid rgba(229, 200, 158, 0.12);
+  /* Faint cream-gold border */
+}
+
+/* ================================
+   Cards / Content Blocks (Cream on black)
+   ================================ */
+
+.card,
+.glass {
+  background: var(--surface);
+  color: var(--text-dark);
+  border: 1px solid rgba(229, 200, 158, 0.18);
+  /* Subtle cream-gold edge */
+  border-radius: 1.5rem;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(245, 232, 199, 0.08);
+  /* Inner glow like foam */
+}
+
+.card-muted {
+  background: var(--surface-muted);
+}
+
+/* ================================
+   Buttons – Green & Cream-Gold
+   ================================ */
+
+.btn-primary {
+  @apply px-6 py-3 rounded-full font-medium transition-all;
+  background: var(--primary);
+  color: white;
+  /* White for max contrast on green */
+}
+
+.btn-primary:hover {
+  background: var(--primary-light);
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.4);
+}
+
+.btn-outline {
+  @apply px-6 py-3 rounded-full font-medium transition-all;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: var(--background);
+  box-shadow: 0 8px 20px rgba(229, 200, 158, 0.3);
+}
+
+/* ================================
+   Links – Green with cream hover
+   ================================ */
+
+a {
+  color: var(--primary-light);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* ================================
+   Section Titles
+   ================================ */
+
+.section-title {
+  @apply text-4xl md:text-5xl font-serif mb-6;
+  color: var(--accent);
+}
+
+/* ================================
+   Layout Helpers
+   ================================ */
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* ================================
+   Full-width Dark Sections
+   ================================ */
+
+.section-dark {
+  background: var(--background-alt);
+  color: var(--foreground);
+}
+
+/* ================================
+   Animations – Subtle pub glow
+   ================================ */
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
