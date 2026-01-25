@@ -10,7 +10,7 @@ import { Beer, Leaf, Users, Sparkles } from "lucide-react";
 export default function About() {
     const { t } = useLanguage();
 
-    const teamMembers = [1, 2, 3, 4, 5];
+    const teamMembers = [1, 2, 3, 4, 5, 6, 7];
 
     return (
         <main className="min-h-screen">
