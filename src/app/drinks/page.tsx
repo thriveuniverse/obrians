@@ -6,32 +6,57 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/context/LanguageContext";
 import { motion, AnimatePresence } from "framer-motion";
-import { Wine, Beer, Martini, Dices, ChevronDown } from "lucide-react";
+import { Wine, Beer, Martini, Dices, ChevronDown, Flame } from "lucide-react"; // Added Flame icon for shooters
 
 // Mock Data for Cocktails
 // In a real app this might come from a CMS or database
 const COCKTAILS_DB = [
-    { id: 'c1', name: "Espresso Martini", tags: ["Sweet", "Strong", "Long Drink"], desc: "Vodka, Kahlua, Espresso" },
-    { id: 'c2', name: "Spicy Margarita", tags: ["Spicy", "Strong", "Refreshing"], desc: "Tequila, Lime, Jalapeño, Cointreau" },
-    { id: 'c3', name: "Mojito", tags: ["Refreshing", "Sweet", "Long Drink"], desc: "Rum, Lime, Mint, Soda, Sugar" },
-    { id: 'c4', name: "Old Fashioned", tags: ["Strong", "Sweet"], desc: "Bourbon, Angostura Bitters, Sugar Cube" },
-    { id: 'c5', name: "B-52", tags: ["Sweet", "Shot"], desc: "Kahlua, Bailey's, Grand Marnier" },
-    { id: 'c6', name: "Moscow Mule", tags: ["Refreshing", "Long Drink"], desc: "Vodka, Ginger Beer, Lime" },
-    { id: 'c7', name: "Bloody Mary", tags: ["Spicy", "Long Drink"], desc: "Vodka, Tomato Juice, Spices, Celery" },
-    { id: 'c8', name: "Irish Coffee", tags: ["Sweet", "Strong", "Hot"], desc: "Irish Whiskey, Coffee, Cream, Sugar" },
-    { id: 'c9', name: "Tequila Sunrise", tags: ["Sweet", "Refreshing", "Long Drink"], desc: "Tequila, Orange Juice, Grenadine" },
-    { id: 'c10', name: "Jägerbomb", tags: ["Strong", "Shot"], desc: "Jägermeister, Energy Drink" }
+    // Créations
+    { id: 'c1', name: "Mandorla Al Sole", tags: ["Sweet", "Fruity", "Strong"], desc: "Rhum ambré, Amaretto, miel, Perrier, poudre d'amande" },
+    { id: 'c2', name: "Vegetal Idea", tags: ["Refreshing", "Fruity"], desc: "Vodka, thé vert froid, mangue, miel" },
+    { id: 'c3', name: "Back To Basil", tags: ["Refreshing", "Herbal"], desc: "Gin infusé au basilic, Tonic, crème de cassis, pipette avec crème de cassis" },
+    { id: 'c4', name: "Sweet Havana", tags: ["Sweet", "Fruity", "Exotic"], desc: "Rhum ambré, liqueur de café, arôme de vanille, jus d'ananas" },
+    { id: 'c5', name: "Pinky Pleasure", tags: ["Sweet", "Fruity", "Refreshing"], desc: "Gin infusé à la framboise, citron vert pressé, jus de fraise, espuma framboise" },
+    { id: 'c6', name: "Agrumes Au Carré", tags: ["Fruity", "Spicy", "Refreshing"], desc: "Vodka, sirop de vanille, citron vert pressé, jus d'orange, poivre, espuma orange citron vanille, poudre d'agrumes" },
+    { id: 'c7', name: "Kumo Yuzu", tags: ["Floral", "Fruity", "Refreshing"], desc: "Gin floral du moment, sirop de sureau, jus de yuzu, sirop de violette" },
+    { id: 'c8', name: "South Flavor", tags: ["Savory", "Spicy", "Strong"], desc: "Rhum infusé au thym, jus de tomate, citron, huile d'olive, poivre" },
+
+    // Classiques
+    { id: 'c9', name: "Mojito", tags: ["Refreshing", "Sweet", "Long Drink"], desc: "Rhum ambré, citron vert, sucre de canne, menthe, Perrier" },
+    { id: 'c10', name: "Caipirinha", tags: ["Strong", "Refreshing", "Fruity"], desc: "Cachaça, citron vert, sucre de canne" },
+    { id: 'c11', name: "Maï Taï", tags: ["Strong", "Fruity", "Exotic"], desc: "Rhum ambré, Cointreau, sirop d'orgeat, jus de citron vert" },
+    { id: 'c12', name: "Sex On The Beach", tags: ["Sweet", "Fruity", "Long Drink"], desc: "Vodka, crème de pêche, jus d'ananas, jus de cranberry" },
+    { id: 'c13', name: "Margarita", tags: ["Strong", "Refreshing", "Sour"], desc: "Tequila, Cointreau, jus de citron vert" },
+    { id: 'c14', name: "Moscow Mule", tags: ["Refreshing", "Spicy", "Long Drink"], desc: "Vodka, jus de citron vert, ginger beer" },
+    { id: 'c15', name: "Long Island", tags: ["Very Strong", "Long Drink", "Complex"], desc: "Rhum blanc, Gin, Cointreau, Tequila, Vodka, jus de citron vert, Coca-Cola" },
+    { id: 'c16', name: "Piña Colada", tags: ["Sweet", "Fruity", "Exotic"], desc: "Rhum ambré, lait de coco, jus d'ananas" },
+    { id: 'c17', name: "Cosmopolitan", tags: ["Refreshing", "Fruity", "Sweet"], desc: "Vodka, Cointreau, jus de citron vert, jus de cranberry" },
+    { id: 'c18', name: "Spritz", tags: ["Refreshing", "Bitter", "Sparkling"], desc: "Aperol, Spritz, Prosecco" },
+    { id: 'c19', name: "Pornstar Martini", tags: ["Sweet", "Fruity", "Sparkling"], desc: "Vodka, sirop de vanille, purée de passion, jus d'ananas, citron vert pressé, Prosecco" },
+    { id: 'c20', name: "Spritz St Germain", tags: ["Floral", "Refreshing", "Sparkling"], desc: "Liqueur St Germain, Prosecco, Perrier" }
 ];
 
 const BEERS = [
-    "Guinness (Stout)", "Kilkenny (Red Ale)", "Hop House 13 (Lager)",
-    "Grimbergen (Blonde)", "La Bête (Amber)", "Magners (Cider)", "Local Craft IPA"
+    "Lager Blonde - Demi (4) / Pinte (7,50)",
+    "Alaryk Blonde - Demi (4,50) / Pinte (8)",
+    "Alaryk Blanche - Demi (4,50) / Pinte (8)",
+    "Alaryk IPA - Demi (5) / Pinte (8,50)",
+    "Guinness - Demi (5) / Pinte (8,50)"
 ];
 
 const WINES = [
     "Picpoul de Pinet (White)", "Chardonnay (White)",
     "Corbières AOP (Red)", "Merlot (Red)",
     "Côtes de Provence (Rosé)", "Gris de Gris (Rosé)"
+];
+
+const SHOOTERS = [
+    { id: 's1', name: "Le Fetch", desc: "Gin, sirop de fraise, crème de citron" },
+    { id: 's2', name: "Baby Guinness", desc: "Baileys, Kahlua" },
+    { id: 's3', name: "Orgasme", desc: "Get 27, Baileys" },
+    { id: 's4', name: "Kiss Cool", desc: "Vodka, Get 27" },
+    { id: 's5', name: "Black Poet", desc: "Jack Daniels, Kahlua, Jagger" },
+    { id: 's6', name: "Madeleine (VENDU PAR 5 MINIMUM)", desc: "Amareto, Cointreau, Kahlua, jus d'ananas" }
 ];
 
 export default function DrinksPage() {
@@ -41,7 +66,7 @@ export default function DrinksPage() {
     const [isSpinning, setIsSpinning] = useState(false);
 
     const moods = [
-        "Sweet", "Spicy", "Refreshing", "Strong", "Shot", "Long Drink", "Surprise Me (Any)"
+        "Sweet", "Spicy", "Refreshing", "Strong", "Shot", "Long Drink", "Fruity", "Herbal", "Exotic", "Floral", "Savory", "Sour", "Bitter", "Sparkling", "Very Strong", "Complex", "Surprise Me (Any)"
     ];
 
     const playGame = () => {
@@ -244,6 +269,44 @@ export default function DrinksPage() {
                                 ))}
                             </ul>
                         </motion.div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Shooters Section - NEW */}
+            <section className="py-24 bg-[var(--background-alt)]">
+                <div className="container-custom">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-16"
+                    >
+                        <Flame className="text-[var(--accent)] mx-auto mb-6" size={48} />
+                        <h2 className="text-4xl md:text-5xl font-serif text-[var(--accent)] mb-4">
+                            {t('drinks.shooters.title')} {/* New translation key for shooters title */}
+                        </h2>
+                        <div className="w-24 h-1 bg-[var(--primary)] mx-auto rounded-full"></div>
+                    </motion.div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {SHOOTERS.map((shooter, idx) => (
+                            <motion.div
+                                key={shooter.id}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.05 }}
+                                className="p-6 rounded-2xl bg-[var(--background)] border border-[var(--accent)]/10 hover:border-[var(--accent)]/50 transition-colors group"
+                            >
+                                <div className="flex justify-between items-start mb-2">
+                                    <h3 className="text-xl font-serif font-bold text-[var(--foreground)] group-hover:text-[var(--accent)] transition-colors">
+                                        {shooter.name}
+                                    </h3>
+                                </div>
+                                <p className="text-gray-500 text-sm mb-4">{shooter.desc}</p>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>

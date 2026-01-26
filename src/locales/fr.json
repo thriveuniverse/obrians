@@ -21,15 +21,54 @@
                 "Strong": "Fort",
                 "Shot": "Shot",
                 "Long Drink": "Long Drink",
+                "Fruity": "Fruité",
+                "Herbal": "Herbal",
+                "Exotic": "Exotique",
+                "Floral": "Floral",
+                "Savory": "Savoureux",
+                "Sour": "Aigre",
+                "Bitter": "Amer",
+                "Sparkling": "Pétillant",
+                "Very Strong": "Très Fort",
+                "Complex": "Complexe",
                 "Surprise Me (Any)": "Surprends-moi (Tout)"
             }
         },
         "cocktails": {
-            "title": "Cocktails Signature"
+            "title": "Cocktails Signature",
+            "Mandorla Al Sole": "Mandorla Al Sole",
+            "Vegetal Idea": "Vegetal Idea",
+            "Back To Basil": "Back To Basil",
+            "Sweet Havana": "Sweet Havana",
+            "Pinky Pleasure": "Pinky Pleasure",
+            "Agrumes Au Carré": "Agrumes Au Carré",
+            "Kumo Yuzu": "Kumo Yuzu",
+            "South Flavor": "South Flavor",
+            "Mojito": "Mojito",
+            "Caipirinha": "Caipirinha",
+            "Maï Taï": "Maï Taï",
+            "Sex On The Beach": "Sex On The Beach",
+            "Margarita": "Margarita",
+            "Moscow Mule": "Moscow Mule",
+            "Long Island": "Long Island",
+            "Piña Colada": "Piña Colada",
+            "Cosmopolitan": "Cosmopolitan",
+            "Spritz": "Spritz",
+            "Pornstar Martini": "Pornstar Martini",
+            "Spritz St Germain": "Spritz St Germain"
         },
         "beerWine": {
             "beerTitle": "Pressions & Bouteilles",
             "wineTitle": "Sélection de Vins"
+        },
+        "shooters": {
+            "title": "Shooters",
+            "Le Fetch": "Le Fetch",
+            "Baby Guinness": "Baby Guinness",
+            "Orgasme": "Orgasme",
+            "Kiss Cool": "Kiss Cool",
+            "Black Poet": "Black Poet",
+            "Madeleine (VENDU PAR 5 MINIMUM)": "Madeleine (VENDU PAR 5 MINIMUM)"
         }
     },
     "home": {
@@ -81,7 +120,7 @@
         "intro": "Que votre équipe vienne de marquer un essai à la dernière minute, d'encaisser un but déchirant, ou que vous soyez juste là parce que le match est diffusé et que l'ambiance est bonne — O'Brians est votre endroit. Venez pour le match, restez pour l'ambiance, et repartez avec une pinte de célébration, un cocktail de consolation… ou honnêtement, n'importe quelle boisson qui vous fait envie. On n'est pas difficiles.",
         "rugby": {
             "title": "Rugby – Six Nations & Fierté Locale",
-            "text": "Le rugby est ancré ici. Pendant le Tournoi des Six Nations, Écossais, Gallois, Italiens, Irlandais, Français — tout le monde est le bienvenu (même si le chambrage devient animé). Et quand le Racing Narbonne joue ? On est à fond ! Grands écrans, super son, et zéro jugement si vous soutenez l'autre camp."
+            "text": "Le rugby est ancré ici. Pendant le Tournoi des Six Nations, Écossais, Gallois, Italiens, Irlandais, Français — tout le monde est le bienvenu (même si le chambrage devient animé). Et quand le Racing Narbonne est playing? On est à fond ! Grands écrans, super son, et zéro jugement si vous soutenez l'autre camp."
         },
         "football": {
             "title": "Football",
