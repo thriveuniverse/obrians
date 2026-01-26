@@ -38,13 +38,18 @@ export default function Home() {
       <Navbar />
 
       <Hero
-        title="O'Brians Pub"
+        title="" // Removed O'Brians Pub from Hero
         ctaText={t('home.cta')}
         ctaLink="/drinks"
         textColor="text-accent"
         image="https://images.unsplash.com/photo-1541546339599-ecdbf3773bc5?auto=format&fit=crop&q=80"
         video="/obrians-pub.mp4"
       />
+
+      {/* New Heading for O'Brians Pub */}
+      <section className="py-12 text-center">
+        <h1 className="text-3xl font-serif font-bold text-[var(--primary)]">O'Brians Pub</h1>
+      </section>
 
       {/* Welcome Section */}
       <section className="py-24 relative overflow-hidden" style={{ background: 'var(--surface)' }}>
@@ -56,7 +61,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="section-title text-center text-primary mb-8 !text-primary" style={{ color: 'var(--primary)' }}>{t('home.introTitle')}</h2>
+              <h2 className="section-title text-center text-primary mb-8 !text-primary text-2xl" style={{ color: 'var(--primary)' }}>{t('home.introTitle')}</h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-12 !text-primary" style={{ color: 'var(--primary)' }}>
                 {t('home.introText')}
               </p>
