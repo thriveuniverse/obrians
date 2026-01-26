@@ -8,55 +8,69 @@ import { useLanguage } from "@/context/LanguageContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { Wine, Beer, Martini, Dices, ChevronDown, Flame } from "lucide-react"; // Added Flame icon for shooters
 
+// Helper function to format names into consistent keys
+const formatKey = (text: string) => {
+    return text
+        .toLowerCase()
+        .normalize("NFD") // Normalize to decompose combined characters (e.g., é to e + ´)
+        .replace(/[̀-ͯ]/g, "") // Remove diacritics
+        .replace(/[^a-z0-9\s-]/g, "") // Remove all non-alphanumeric chars except spaces and hyphens
+        .replace(/\s+/g, "_") // Replace spaces with underscores
+        .replace(/-+/g, "_"); // Replace multiple hyphens with single underscore
+};
+
 // Mock Data for Cocktails
 // In a real app this might come from a CMS or database
 const COCKTAILS_DB = [
     // Créations
-    { id: 'c1', name: "Mandorla Al Sole", tags: ["Sweet", "Fruity", "Strong"], desc: "Rhum ambré, Amaretto, miel, Perrier, poudre d'amande" },
-    { id: 'c2', name: "Vegetal Idea", tags: ["Refreshing", "Fruity"], desc: "Vodka, thé vert froid, mangue, miel" },
-    { id: 'c3', name: "Back To Basil", tags: ["Refreshing", "Herbal"], desc: "Gin infusé au basilic, Tonic, crème de cassis, pipette avec crème de cassis" },
-    { id: 'c4', name: "Sweet Havana", tags: ["Sweet", "Fruity", "Exotic"], desc: "Rhum ambré, liqueur de café, arôme de vanille, jus d'ananas" },
-    { id: 'c5', name: "Pinky Pleasure", tags: ["Sweet", "Fruity", "Refreshing"], desc: "Gin infusé à la framboise, citron vert pressé, jus de fraise, espuma framboise" },
-    { id: 'c6', name: "Agrumes Au Carré", tags: ["Fruity", "Spicy", "Refreshing"], desc: "Vodka, sirop de vanille, citron vert pressé, jus d'orange, poivre, espuma orange citron vanille, poudre d'agrumes" },
-    { id: 'c7', name: "Kumo Yuzu", tags: ["Floral", "Fruity", "Refreshing"], desc: "Gin floral du moment, sirop de sureau, jus de yuzu, sirop de violette" },
-    { id: 'c8', name: "South Flavor", tags: ["Savory", "Spicy", "Strong"], desc: "Rhum infusé au thym, jus de tomate, citron, huile d'olive, poivre" },
+    { id: 'c1', name: "Mandorla Al Sole", tags: ["Sweet", "Fruity", "Strong"] },
+    { id: 'c2', name: "Vegetal Idea", tags: ["Refreshing", "Fruity"] },
+    { id: 'c3', name: "Back To Basil", tags: ["Refreshing", "Herbal"] },
+    { id: 'c4', name: "Sweet Havana", tags: ["Sweet", "Fruity", "Exotic"] },
+    { id: 'c5', name: "Pinky Pleasure", tags: ["Sweet", "Fruity", "Refreshing"] },
+    { id: 'c6', name: "Agrumes Au Carré", tags: ["Fruity", "Spicy", "Refreshing"] },
+    { id: 'c7', name: "Kumo Yuzu", tags: ["Floral", "Fruity", "Refreshing"] },
+    { id: 'c8', name: "South Flavor", tags: ["Savory", "Spicy", "Strong"] },
 
     // Classiques
-    { id: 'c9', name: "Mojito", tags: ["Refreshing", "Sweet", "Long Drink"], desc: "Rhum ambré, citron vert, sucre de canne, menthe, Perrier" },
-    { id: 'c10', name: "Caipirinha", tags: ["Strong", "Refreshing", "Fruity"], desc: "Cachaça, citron vert, sucre de canne" },
-    { id: 'c11', name: "Maï Taï", tags: ["Strong", "Fruity", "Exotic"], desc: "Rhum ambré, Cointreau, sirop d'orgeat, jus de citron vert" },
-    { id: 'c12', name: "Sex On The Beach", tags: ["Sweet", "Fruity", "Long Drink"], desc: "Vodka, crème de pêche, jus d'ananas, jus de cranberry" },
-    { id: 'c13', name: "Margarita", tags: ["Strong", "Refreshing", "Sour"], desc: "Tequila, Cointreau, jus de citron vert" },
-    { id: 'c14', name: "Moscow Mule", tags: ["Refreshing", "Spicy", "Long Drink"], desc: "Vodka, jus de citron vert, ginger beer" },
-    { id: 'c15', name: "Long Island", tags: ["Very Strong", "Long Drink", "Complex"], desc: "Rhum blanc, Gin, Cointreau, Tequila, Vodka, jus de citron vert, Coca-Cola" },
-    { id: 'c16', name: "Piña Colada", tags: ["Sweet", "Fruity", "Exotic"], desc: "Rhum ambré, lait de coco, jus d'ananas" },
-    { id: 'c17', name: "Cosmopolitan", tags: ["Refreshing", "Fruity", "Sweet"], desc: "Vodka, Cointreau, jus de citron vert, jus de cranberry" },
-    { id: 'c18', name: "Spritz", tags: ["Refreshing", "Bitter", "Sparkling"], desc: "Aperol, Spritz, Prosecco" },
-    { id: 'c19', name: "Pornstar Martini", tags: ["Sweet", "Fruity", "Sparkling"], desc: "Vodka, sirop de vanille, purée de passion, jus d'ananas, citron vert pressé, Prosecco" },
-    { id: 'c20', name: "Spritz St Germain", tags: ["Floral", "Refreshing", "Sparkling"], desc: "Liqueur St Germain, Prosecco, Perrier" }
+    { id: 'c9', name: "Mojito", tags: ["Refreshing", "Sweet", "Long Drink"] },
+    { id: 'c10', name: "Caipirinha", tags: ["Strong", "Refreshing", "Fruity"] },
+    { id: 'c11', name: "Maï Taï", tags: ["Strong", "Fruity", "Exotic"] },
+    { id: 'c12', name: "Sex On The Beach", tags: ["Sweet", "Fruity", "Long Drink"] },
+    { id: 'c13', name: "Margarita", tags: ["Strong", "Refreshing", "Sour"] },
+    { id: 'c14', name: "Moscow Mule", tags: ["Refreshing", "Spicy", "Long Drink"] },
+    { id: 'c15', name: "Long Island", tags: ["Very Strong", "Long Drink", "Complex"] },
+    { id: 'c16', name: "Piña Colada", tags: ["Sweet", "Fruity", "Exotic"] },
+    { id: 'c17', name: "Cosmopolitan", tags: ["Refreshing", "Fruity", "Sweet"] },
+    { id: 'c18', name: "Spritz", tags: ["Refreshing", "Bitter", "Sparkling"] },
+    { id: 'c19', name: "Pornstar Martini", tags: ["Sweet", "Fruity", "Sparkling"] },
+    { id: 'c20', name: "Spritz St Germain", tags: ["Floral", "Refreshing", "Sparkling"] }
 ];
 
 const BEERS = [
-    "Lager Blonde - Demi (4) / Pinte (7,50)",
-    "Alaryk Blonde - Demi (4,50) / Pinte (8)",
-    "Alaryk Blanche - Demi (4,50) / Pinte (8)",
-    "Alaryk IPA - Demi (5) / Pinte (8,50)",
-    "Guinness - Demi (5) / Pinte (8,50)"
+    { name: "Lager Blonde", price: "Demi (4) / Pinte (7,50)" },
+    { name: "Alaryk Blonde", price: "Demi (4,50) / Pinte (8)" },
+    { name: "Alaryk Blanche", price: "Demi (4,50) / Pinte (8)" },
+    { name: "Alaryk IPA", price: "Demi (5) / Pinte (8,50)" },
+    { name: "Guinness", price: "Demi (5) / Pinte (8,50)" }
 ];
 
 const WINES = [
-    "Picpoul de Pinet (White)", "Chardonnay (White)",
-    "Corbières AOP (Red)", "Merlot (Red)",
-    "Côtes de Provence (Rosé)", "Gris de Gris (Rosé)"
+    { name: "Picpoul de Pinet (White)", desc: "Picpoul de Pinet (White)" },
+    { name: "Chardonnay (White)", desc: "Chardonnay (White)" },
+    { name: "Corbières AOP (Red)", desc: "Corbières AOP (Red)" },
+    { name: "Merlot (Red)", desc: "Merlot (Red)" },
+    { name: "Côtes de Provence (Rosé)", desc: "Côtes de Provence (Rosé)" },
+    { name: "Gris de Gris (Rosé)", desc: "Gris de Gris (Rosé)" }
 ];
 
 const SHOOTERS = [
-    { id: 's1', name: "Le Fetch", desc: "Gin, sirop de fraise, crème de citron" },
-    { id: 's2', name: "Baby Guinness", desc: "Baileys, Kahlua" },
-    { id: 's3', name: "Orgasme", desc: "Get 27, Baileys" },
-    { id: 's4', name: "Kiss Cool", desc: "Vodka, Get 27" },
-    { id: 's5', name: "Black Poet", desc: "Jack Daniels, Kahlua, Jagger" },
-    { id: 's6', name: "Madeleine (VENDU PAR 5 MINIMUM)", desc: "Amareto, Cointreau, Kahlua, jus d'ananas" }
+    { id: 's1', name: "Le Fetch" },
+    { id: 's2', name: "Baby Guinness" },
+    { id: 's3', name: "Orgasme" },
+    { id: 's4', name: "Kiss Cool" },
+    { id: 's5', name: "Black Poet" },
+    { id: 's6', name: "Madeleine (VENDU PAR 5 MINIMUM)" }
 ];
 
 export default function DrinksPage() {
@@ -160,10 +174,10 @@ export default function DrinksPage() {
                                             {t('drinks.game.result')}
                                         </p>
                                         <h3 className="text-4xl md:text-5xl font-serif font-bold text-[var(--primary)] mb-4">
-                                            {gameResult.name}
+                                            {t(`drinks.cocktails.${formatKey(gameResult.name)}.name`)}
                                         </h3>
                                         <p className="text-gray-400 text-lg">
-                                            {gameResult.desc}
+                                            {t(`drinks.cocktails.${formatKey(gameResult.name)}.desc`)}
                                         </p>
                                         <div className="flex gap-2 justify-center mt-6">
                                             {gameResult.tags.map(tag => (
@@ -208,10 +222,10 @@ export default function DrinksPage() {
                             >
                                 <div className="flex justify-between items-start mb-2">
                                     <h3 className="text-xl font-serif font-bold text-[var(--foreground)] group-hover:text-[var(--accent)] transition-colors">
-                                        {cocktail.name}
+                                        {t(`drinks.cocktails.${formatKey(cocktail.name)}.name`)}
                                     </h3>
                                 </div>
-                                <p className="text-gray-500 text-sm mb-4">{cocktail.desc}</p>
+                                <p className="text-gray-500 text-sm mb-4">{t(`drinks.cocktails.${formatKey(cocktail.name)}.desc`)}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -240,7 +254,8 @@ export default function DrinksPage() {
                                 {BEERS.map((beer, i) => (
                                     <li key={i} className="flex items-center gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--accent-dark)]/20 shadow-sm">
                                         <div className="w-2 h-2 rounded-full bg-[var(--primary)]"></div>
-                                        <span className="text-lg font-medium text-black">{beer}</span>
+                                        <span className="text-lg font-medium text-black">{t(`drinks.beerWine.${formatKey(beer.name)}.name`)}</span>
+                                        {beer.price && <span className="text-sm text-gray-500 ml-2">{t(`drinks.beerWine.${formatKey(beer.name)}.price`)}</span>}
                                     </li>
                                 ))}
                             </ul>
@@ -264,7 +279,8 @@ export default function DrinksPage() {
                                 {WINES.map((wine, i) => (
                                     <li key={i} className="flex items-center gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--accent-dark)]/20 shadow-sm">
                                         <div className="w-2 h-2 rounded-full bg-[var(--accent-dark)]"></div>
-                                        <span className="text-lg font-medium text-black">{wine}</span>
+                                        <span className="text-lg font-medium text-black">{t(`drinks.beerWine.${formatKey(wine.name)}.name`)}</span>
+                                        {wine.desc && <span className="text-sm text-gray-500 ml-2">{t(`drinks.beerWine.${formatKey(wine.name)}.desc`)}</span>}
                                     </li>
                                 ))}
                             </ul>
@@ -301,10 +317,10 @@ export default function DrinksPage() {
                             >
                                 <div className="flex justify-between items-start mb-2">
                                     <h3 className="text-xl font-serif font-bold text-[var(--foreground)] group-hover:text-[var(--accent)] transition-colors">
-                                        {shooter.name}
+                                        {t(`drinks.shooters.${formatKey(shooter.name)}.name`)}
                                     </h3>
                                 </div>
-                                <p className="text-gray-500 text-sm mb-4">{shooter.desc}</p>
+                                <p className="text-gray-500 text-sm mb-4">{t(`drinks.shooters.${formatKey(shooter.name)}.desc`)}</p>
                             </motion.div>
                         ))}
                     </div>

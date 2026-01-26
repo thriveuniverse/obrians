@@ -36,39 +36,161 @@
         },
         "cocktails": {
             "title": "Signature Cocktails",
-            "Mandorla Al Sole": "Mandorla Al Sole",
-            "Vegetal Idea": "Vegetal Idea",
-            "Back To Basil": "Back To Basil",
-            "Sweet Havana": "Sweet Havana",
-            "Pinky Pleasure": "Pinky Pleasure",
-            "Agrumes Au Carré": "Agrumes Au Carré",
-            "Kumo Yuzu": "Kumo Yuzu",
-            "South Flavor": "South Flavor",
-            "Mojito": "Mojito",
-            "Caipirinha": "Caipirinha",
-            "Maï Taï": "Maï Taï",
-            "Sex On The Beach": "Sex On The Beach",
-            "Margarita": "Margarita",
-            "Moscow Mule": "Moscow Mule",
-            "Long Island": "Long Island",
-            "Piña Colada": "Piña Colada",
-            "Cosmopolitan": "Cosmopolitan",
-            "Spritz": "Spritz",
-            "Pornstar Martini": "Pornstar Martini",
-            "Spritz St Germain": "Spritz St Germain"
+            "mandorla_al_sole": {
+                "name": "Mandorla Al Sole",
+                "desc": "Amber rum, Amaretto, honey, Perrier, almond powder"
+            },
+            "vegetal_idea": {
+                "name": "Vegetal Idea",
+                "desc": "Vodka, cold green tea, mango, honey"
+            },
+            "back_to_basil": {
+                "name": "Back To Basil",
+                "desc": "Gin infused with basil, Tonic, blackcurrant cream, pipette with blackcurrant cream"
+            },
+            "sweet_havana": {
+                "name": "Sweet Havana",
+                "desc": "Amber rum, coffee liqueur, vanilla flavor, pineapple juice"
+            },
+            "pinky_pleasure": {
+                "name": "Pinky Pleasure",
+                "desc": "Gin infused with raspberry, pressed lemon, strawberry juice, strawberry foam"
+            },
+            "agrumes_au_carre": {
+                "name": "Agrumes Au Carré",
+                "desc": "Vodka, vanilla syrup, pressed lemon, orange juice, pepper, orange lemon vanilla foam, citrus powder"
+            },
+            "kumo_yuzu": {
+                "name": "Kumo Yuzu",
+                "desc": "Floral gin of the moment, elderflower syrup, yuzu juice, violet syrup"
+            },
+            "south_flavor": {
+                "name": "South Flavor",
+                "desc": "Rum infused with thyme, tomato juice, lemon, olive oil, pepper"
+            },
+            "mojito": {
+                "name": "Mojito",
+                "desc": "Amber rum, lime, cane sugar, mint, Perrier"
+            },
+            "caipirinha": {
+                "name": "Caipirinha",
+                "desc": "Cachaça, lime, cane sugar"
+            },
+            "mai_tai": {
+                "name": "Maï Taï",
+                "desc": "Amber rum, Cointreau, orgeat syrup, lime juice"
+            },
+            "sex_on_the_beach": {
+                "name": "Sex On The Beach",
+                "desc": "Vodka, peach cream, pineapple juice, cranberry juice"
+            },
+            "margarita": {
+                "name": "Margarita",
+                "desc": "Tequila, Cointreau, lime juice"
+            },
+            "moscow_mule": {
+                "name": "Moscow Mule",
+                "desc": "Vodka, lime juice, ginger beer"
+            },
+            "long_island": {
+                "name": "Long Island",
+                "desc": "White rum, Gin, Cointreau, Tequila, Vodka, lemon juice, Coca-Cola"
+            },
+            "pina_colada": {
+                "name": "Piña Colada",
+                "desc": "Amber rum, coconut milk, pineapple juice"
+            },
+            "cosmopolitan": {
+                "name": "Cosmopolitan",
+                "desc": "Vodka, Cointreau, lime juice, cranberry juice"
+            },
+            "spritz": {
+                "name": "Spritz",
+                "desc": "Aperol, Spritz, Prosecco"
+            },
+            "pornstar_martini": {
+                "name": "Pornstar Martini",
+                "desc": "Vodka, vanilla syrup, passion fruit puree, pineapple juice, pressed lemon, Prosecco"
+            },
+            "spritz_st_germain": {
+                "name": "Spritz St Germain",
+                "desc": "St Germain liqueur, Prosecco, Perrier"
+            }
         },
         "beerWine": {
             "beerTitle": "On Tap & Bottles",
-            "wineTitle": "Wine Selection"
+            "lager_blonde": {
+                "name": "Lager Blonde",
+                "price": "Demi (4) / Pinte (7,50)"
+            },
+            "alaryk_blonde": {
+                "name": "Alaryk Blonde",
+                "price": "Demi (4,50) / Pinte (8)"
+            },
+            "alaryk_blanche": {
+                "name": "Alaryk Blanche",
+                "price": "Demi (4,50) / Pinte (8)"
+            },
+            "alaryk_ipa": {
+                "name": "Alaryk IPA",
+                "price": "Demi (5) / Pinte (8,50)"
+            },
+            "guinness": {
+                "name": "Guinness",
+                "price": "Demi (5) / Pinte (8,50)"
+            },
+            "wineTitle": "Wine Selection",
+            "picpoul_de_pinet_white": {
+                "name": "Picpoul de Pinet",
+                "desc": "White"
+            },
+            "chardonnay_white": {
+                "name": "Chardonnay",
+                "desc": "White"
+            },
+            "corbieres_aop_red": {
+                "name": "Corbières AOP",
+                "desc": "Red"
+            },
+            "merlot_red": {
+                "name": "Merlot",
+                "desc": "Red"
+            },
+            "cotes_de_provence_rose": {
+                "name": "Côtes de Provence",
+                "desc": "Rosé"
+            },
+            "gris_de_gris_rose": {
+                "name": "Gris de Gris",
+                "desc": "Rosé"
+            }
         },
         "shooters": {
             "title": "Shooters",
-            "Le Fetch": "Le Fetch",
-            "Baby Guinness": "Baby Guinness",
-            "Orgasme": "Orgasme",
-            "Kiss Cool": "Kiss Cool",
-            "Black Poet": "Black Poet",
-            "Madeleine (VENDU PAR 5 MINIMUM)": "Madeleine (SOLD IN 5 MINIMUM)"
+            "le_fetch": {
+                "name": "Le Fetch",
+                "desc": "Gin, strawberry syrup, lemon cream"
+            },
+            "baby_guinness": {
+                "name": "Baby Guinness",
+                "desc": "Baileys, Kahlua"
+            },
+            "orgasme": {
+                "name": "Orgasme",
+                "desc": "Get 27, Baileys"
+            },
+            "kiss_cool": {
+                "name": "Kiss Cool",
+                "desc": "Vodka, Get 27"
+            },
+            "black_poet": {
+                "name": "Black Poet",
+                "desc": "Jack Daniels, Kahlua, Jagger"
+            },
+            "madeleine_vendu_par_5_minimum": {
+                "name": "Madeleine (SOLD IN 5 MINIMUM)",
+                "desc": "Amareto, Cointreau, Kahlua, pineapple juice"
+            }
         }
     },
     "home": {
@@ -137,6 +259,6 @@
     },
     "footer": {
         "rights": "All rights reserved.",
-        "address": "4 rue Benjamin Cremieux, 11100 Narbonne, France"
+        "address": "9 Bd Général de Gaulle, 11100 Narbonne, France"
     }
 }

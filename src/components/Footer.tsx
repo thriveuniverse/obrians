@@ -60,7 +60,7 @@ const Footer = () => {
                             <li>
                                 <a href="tel:+33468916792" className="flex items-center gap-3 transition-colors" style={{ color: 'var(--text-light)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-light)'}>
                                     <Phone size={20} />
-                                    <span>04 68 91 67 92</span>
+                                    <span>04 68 75 96 57</span>
                                 </a>
                             </li>
                             <li>
