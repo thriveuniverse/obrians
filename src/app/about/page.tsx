@@ -59,15 +59,6 @@ export default function About() {
                                         playsInline
                                         controls
                                         poster={`/team/member-${member}-poster.jpg`} // Assuming posters might exist, else first frame
-                                        onClick={(e) => {
-                                            // Optional: toggle play/pause on click outside controls
-                                            const video = e.currentTarget;
-                                            if (video.paused) {
-                                                video.play();
-                                            } else {
-                                                video.pause();
-                                            }
-                                        }}
                                     >
                                         <source src={`/team/member-${member}.mp4`} type="video/mp4" />
                                         Your browser does not support the video tag.
