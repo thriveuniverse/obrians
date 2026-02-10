@@ -1,4 +1,4 @@
-# L'Antre - Website
+# O'Brians - Website
 
 A modern, welcoming website for LÁntre bar in Narbonne, France.
 

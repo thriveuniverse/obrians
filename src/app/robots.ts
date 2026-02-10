@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             disallow: '/',
         },
-        sitemap: 'https://lantre.netlify.app/sitemap.xml',
+        sitemap: 'https://obrians-narbonne.netlify.app/sitemap.xml',
     }
 }

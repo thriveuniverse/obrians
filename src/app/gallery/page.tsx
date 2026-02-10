@@ -14,14 +14,14 @@ export default function Gallery() {
 
     // Media Collection
     const curatedImages = [
-        { url: '/lantre-vibe1.jpg', title: 'L\'Antre Vibe', span: 'md:col-span-2 md:row-span-2' },
+        { url: '/obrians-vibe1.jpg', title: 'L\'obrians Vibe', span: 'md:col-span-2 md:row-span-2' },
         { url: '/beer-help.mp4', title: 'Beer Selection', span: 'md:col-span-1 md:row-span-2' },
-        { url: '/chouffe-lantre.jpg', title: 'Chouffe', span: 'md:col-span-1 md:row-span-1' },
-        { url: '/lantre-halloween.jpg', title: 'Halloween Special', span: 'md:col-span-1 md:row-span-1' },
-        { url: '/lantre-food2.jpg', title: 'Tapas Platter', span: 'md:col-span-1 md:row-span-1' },
-        { url: '/lantre-food3.jpg', title: 'Signature Dishes', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/cocktails-obrians.jpg', title: 'cocktails', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/obrians-halloween.jpg', title: 'Halloween Special', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/obrians-food2.jpg', title: 'Tapas Platter', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/obrians-food3.jpg', title: 'Signature Dishes', span: 'md:col-span-1 md:row-span-1' },
         { url: '/gallery-food1.jpg', title: 'Food & Drinks', span: 'md:col-span-1 md:row-span-1' },
-        { url: '/gallery-Alex1.jpg', title: 'Good Times', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/gallery-staff.jpg', title: 'Good Times', span: 'md:col-span-1 md:row-span-1' },
     ];
 
     return (
@@ -30,7 +30,7 @@ export default function Gallery() {
 
             <Hero
                 title=""
-                video="/lantre-swords.mp4"
+                video="/the_vibe.mp4"
                 videoFit="contain"
                 bgColor="#260602"
                 showGradient={false}
