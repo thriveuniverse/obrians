@@ -59,6 +59,29 @@ export default function RootLayout({
     }
   };
 
+  const businessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "O'Brians Pub",
+    "url": "https://obriansnarbonne.com",
+    "telephone": "+33468759657",
+    "email": "obriansirishpub11@gmail.com",
+    "image": "https://obriansnarbonne.com/logo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 Bd Général de Gaulle",
+      "addressLocality": "Narbonne",
+      "postalCode": "11100",
+      "addressCountry": "FR"
+    },
+    "servesCuisine": ["Irish", "Tapas"],
+    "hasMenu": "https://obriansnarbonne.com/drinks",
+    "sameAs": [
+      "https://www.instagram.com/obrians_pub_narbonne/",
+      "https://www.facebook.com/obrianspubnarbonne/"
+    ]
+  };
+
   return (
     <html lang="fr" className={`${unifrakturcook.variable} ${inter.variable}`}>
       <head>
@@ -82,6 +105,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }}
         />
       </head>
       <body className="font-sans antialiased text-gray-900 bg-[#faf9f6]">

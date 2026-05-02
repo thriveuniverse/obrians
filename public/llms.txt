@@ -1,0 +1,21 @@
+# O'Brians Pub
+
+> Irish pub in Narbonne, France. World beers, signature cocktails, live sports on big screens, and a friendly atmosphere.
+
+O'Brians Pub is located at 9 Bd Général de Gaulle, 11100 Narbonne, France. It is a chic and relaxed Irish pub offering a wide selection of craft and international beers, signature cocktails, shooters, and wines. The pub screens live sport including Six Nations rugby, Ligue 1, Premier League, Champions League, and Formula 1 on big screens.
+
+## Pages
+
+- [Home](https://obriansnarbonne.com): Welcome page introducing O'Brians Pub and linking to key sections.
+- [Drinks Menu](https://obriansnarbonne.com/drinks): Full drinks menu including signature cocktails, classics, beers on tap, wine selection, and shooters. Includes a cocktail roulette feature.
+- [Live Sports](https://obriansnarbonne.com/sports): Information on live sport screenings — rugby (Six Nations, RC Narbonne), football (Ligue 1, Champions League), and more.
+- [Gallery](https://obriansnarbonne.com/gallery): Photos and videos of the pub atmosphere.
+- [Meet the Team](https://obriansnarbonne.com/about): The team behind O'Brians Pub.
+
+## Contact
+
+- Address: 9 Bd Général de Gaulle, 11100 Narbonne, France
+- Phone: +33 4 68 75 96 57
+- Email: obriansirishpub11@gmail.com
+- Instagram: https://www.instagram.com/obrians_pub_narbonne/
+- Facebook: https://www.facebook.com/obrianspubnarbonne/
