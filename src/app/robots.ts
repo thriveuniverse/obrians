@@ -6,8 +6,8 @@ export default function robots(): MetadataRoute.Robots {
     return {
         rules: {
             userAgent: '*',
-            disallow: '/',
+            allow: '/',
         },
-        sitemap: 'https://obrians-narbonne.netlify.app/sitemap.xml',
+        sitemap: 'https://obriansnarbonne.com/sitemap.xml',
     }
 }

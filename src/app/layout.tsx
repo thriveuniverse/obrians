@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "O'Brians Pub | Pub à Narbonne",
     description: "Bieres artisnales et bien plus encore au cœur de Narbonne.",
-    url: "https://obrians-narbonne.netlify.app",
+    url: "https://obriansnarbonne.com",
     siteName: "O'Brians Pub Narbonne",
     images: [
       {
@@ -51,7 +51,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "O'Brians Pub",
-    "url": "https://obrians-narbonne.netlify.app",
+    "url": "https://obriansnarbonne.com",
     "creator": {
       "@type": "Organization",
       "name": "The Thrive Clan",

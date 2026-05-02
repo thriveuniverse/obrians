@@ -41,7 +41,7 @@ const Footer = () => {
                                 <Link href="/about" className="transition-colors" style={{ color: 'var(--text-light)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-light)'}>{t('nav.about')}</Link>
                             </li>
                             <li>
-                                <Link href="/history" className="transition-colors" style={{ color: 'var(--text-light)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-light)'}>{t('nav.history')}</Link>
+                                <Link href="/sports" className="transition-colors" style={{ color: 'var(--text-light)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-light)'}>{t('nav.history')}</Link>
                             </li>
                             <li>
                                 <Link href="/gallery" className="transition-colors" style={{ color: 'var(--text-light)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-light)'}>{t('nav.gallery')}</Link>

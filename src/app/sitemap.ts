@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://obrians.netlify.app'
+    const baseUrl = 'https://obriansnarbonne.com'
 
     return [
         {
@@ -19,7 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/history`,
+            url: `${baseUrl}/sports`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/drinks`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.8,

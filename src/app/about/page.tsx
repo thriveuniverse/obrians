@@ -65,14 +65,6 @@ export default function About() {
                                     </video>
                                 </div>
 
-                                <div className="p-6 text-center flex-1 flex flex-col justify-center">
-                                    <h3 className="text-2xl font-serif font-bold text-primary mb-2">
-                                        {t('about.memberLabel')} {member}
-                                    </h3>
-                                    <p className="text-gray-700 italic">
-                                        {t('about.memberDesc')}
-                                    </p>
-                                </div>
                             </motion.div>
                         ))}
                     </div>

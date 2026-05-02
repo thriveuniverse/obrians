@@ -104,7 +104,7 @@ const Navbar = () => {
                                 </Link>
                             ))}
                             <div className="flex gap-6 p-2 pt-4 border-t" style={{ borderColor: 'var(--accent-dark)' }}>
-                                <a href="https://www.instagram.com/ obrians_pub_narbonne/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-bright)' }}>
+                                <a href="https://www.instagram.com/obrians_pub_narbonne/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-bright)' }}>
                                     <Instagram size={24} />
                                 </a>
                                 <a href="https://www.facebook.com/obrianspubnarbonne/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-bright)' }}>
